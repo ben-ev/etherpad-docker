@@ -1,13 +1,12 @@
-# Etherpad-Lite Dockerfile
+# Etherpad-Lite Raspberry Pi Dockerfile
 #
-# https://github.com/ether/etherpad-docker
-#
+# Developed from https://github.com/ether/etherpad-docker which was itself
 # Developed from a version by Evan Hazlett at https://github.com/arcus-io/docker-etherpad 
 #
 # Version 1.0
 
-# Use Docker's nodejs, which is based on ubuntu
-FROM dockerfile/nodejs
+# use hypriot's node image
+FROM hypriot/rpi-node
 MAINTAINER John E. Arnold, iohannes.eduardus.arnold@gmail.com
 
 # Get Etherpad-lite's other dependencies
